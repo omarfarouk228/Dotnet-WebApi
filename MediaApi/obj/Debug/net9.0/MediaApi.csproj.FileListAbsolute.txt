@@ -99,3 +99,4 @@
 /Users/theessential/Documents/BlazorProject/MediaProject/MediaApi/obj/Debug/net9.0/MediaApi.pdb
 /Users/theessential/Documents/BlazorProject/MediaProject/MediaApi/obj/Debug/net9.0/MediaApi.genruntimeconfig.cache
 /Users/theessential/Documents/BlazorProject/MediaProject/MediaApi/obj/Debug/net9.0/ref/MediaApi.dll
+/Users/theessential/Documents/BlazorProject/MediaProject/MediaApi/obj/Debug/net9.0/MediaApi.sourcelink.json

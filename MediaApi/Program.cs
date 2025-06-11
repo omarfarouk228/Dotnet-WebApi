@@ -17,6 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Configuration de la chaine de connexion à la base de données
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
+
 // Injection des dépendances
 builder.Services.AddSingleton<IDbConnectionFactory>(new SqlConnectionFactory(connectionString!));
 builder.Services.AddScoped<IGroupRepository, GroupRepository>();
@@ -25,6 +26,8 @@ builder.Services.AddScoped<IAuthRepository, AuthRepository>();
 builder.Services.AddScoped<IGroupService, GroupService>();
 builder.Services.AddScoped<IMediaService, MediaService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IEmailService, SmtpEmailService>();
+
 
 builder.Services.AddSwaggerGen(options =>
 {

@@ -11,8 +11,12 @@ namespace MediaApi.Services
     {
         private readonly IAuthRepository _authRepository = authRepository;
 
+        public Task<AuthResult> ForgotPasswordAsync(string email) => _authRepository.ForgotPasswordAsync(email);
+
         public Task<AuthResult> LoginAsync(string email, string password) => _authRepository.LoginAsync(email, password);
 
         public Task<AuthResult> RegisterAsync(string username, string email, string password) => _authRepository.RegisterAsync(username, email, password);
+
+        public Task<AuthResult> ResetPasswordAsync(string token, string password) => _authRepository.ResetPasswordAsync(token, password);
     }
 }

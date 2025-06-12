@@ -15,5 +15,7 @@ namespace ConsoleApp1.Models
         public DateTime CreatedAt { get; set; }
         public DateTime? LastLogin { get; set; }
         public bool isActive { get; set; } = false;
+        public string? ResetToken { get; set; }
+        public DateTime? ResetTokenExpires { get; set; }
     }
 }

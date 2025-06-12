@@ -156,3 +156,4 @@
 /Users/theessential/Documents/BlazorProject/MediaProject/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.pdb
 /Users/theessential/Documents/BlazorProject/MediaProject/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.genruntimeconfig.cache
 /Users/theessential/Documents/BlazorProject/MediaProject/ConsoleApp1/obj/Debug/net9.0/ref/ConsoleApp1.dll
+/Users/theessential/Documents/BlazorProject/MediaProject/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.sourcelink.json

@@ -10,5 +10,8 @@ namespace MediaApi.Services
     {
         Task<AuthResult> RegisterAsync(string username, string email, string password);
         Task<AuthResult> LoginAsync(string email, string password);
+
+        Task<AuthResult> ForgotPasswordAsync(string email);
+        Task<AuthResult> ResetPasswordAsync(string token, string password);
     }
 }

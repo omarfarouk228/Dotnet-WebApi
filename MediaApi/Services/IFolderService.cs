@@ -15,6 +15,7 @@ namespace MediaApi.Services
         Task<int> UpdateFolder(FolderUpdate Folder);
         Task<int> DeleteFolder(int id);
         Task<bool> HasFiles(int id);
+        Task<bool> HasChildrens(int id);
 
     }
 }

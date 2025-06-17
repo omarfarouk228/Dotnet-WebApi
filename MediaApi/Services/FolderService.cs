@@ -23,6 +23,8 @@ namespace MediaApi.Services
 
         public Task<bool> HasFiles(int id) => _folderRepository.HasFiles(id);
 
+        public Task<bool> HasChildrens(int id) => _folderRepository.HasChildrens(id);
+
         public Task<int> UpdateFolder(FolderUpdate Folder) => _folderRepository.UpdateFolder(Folder);
     }
 }

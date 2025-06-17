@@ -37,6 +37,13 @@ namespace MediaApi.Controllers
             return Ok(folders);
         }
 
+        [HttpGet("haschildrens/{id:int}")]
+        public async Task<ActionResult<bool>> HasChildrens(int id)
+        {
+            var folders = await _folderService.HasChildrens(id);
+            return Ok(folders);
+        }
+
         [HttpPost]
         public async Task<ActionResult<int>> Create([FromBody] FolderCreate folder)
         {

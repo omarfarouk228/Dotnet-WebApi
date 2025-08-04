@@ -85,6 +85,13 @@ namespace ConsoleApp1.Data.Repositories
             return await connection.QueryFirstOrDefaultAsync<bool>(sql, new { Id = id });
         }
 
+        public async Task<bool> HasChildrens(int id)
+        {
+            using var connection = await _db.GetOpenConnectionInterface();
+            var sql = "SELECT COUNT(1) FROM [Folders] WHERE ParentId = @Id";
+            return await connection.QueryFirstOrDefaultAsync<bool>(sql, new { Id = id });
+        }
+
         public async Task<int> UpdateFolder(FolderUpdate folder)
         {
             using var connection = await _db.GetOpenConnectionInterface();
